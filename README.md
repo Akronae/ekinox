@@ -1,7 +1,5 @@
 # 💽 EkinoxTV
 
----
-
 ## 🧱 Stack technique
 
 | Brique            | Choix                          |
@@ -15,8 +13,6 @@
 | Linting           | **Oxlint**                     |
 | Package manager   | **Yarn**                       |
 | Compilation React | **React Compiler** (via Babel) |
-
----
 
 ## 🚀 Démarrer le projet
 
@@ -53,8 +49,6 @@ Le résultat est généré dans le dossier `dist/`.
 yarn preview
 ```
 
----
-
 ## 🧪 Tests
 
 ```bash
@@ -69,15 +63,11 @@ Les tests unitaires couvrent la logique métier (`src/business/getBill.test.ts`)
 - Normalisation des entrées (casse, espaces, lignes vides)
 - Structure de sortie de la facture
 
----
-
 ## 🧹 Linting
 
 ```bash
 yarn lint
 ```
-
----
 
 ## 📁 Structure du projet
 
@@ -115,8 +105,6 @@ ekinox/
 - **`src/components/`** : interface utilisateur React avec Mantine.
 - **`src/utils/`** : utilitaires de formatage.
 
----
-
 ## 🧠 Logique métier
 
 La fonction `getBill(movies: string[])` dans `src/business/getBill.ts` prend un tableau de noms de films (un par ligne saisie dans l'UI) et retourne une facture structurée :
@@ -136,8 +124,6 @@ La fonction `getBill(movies: string[])` dans `src/business/getBill.ts` prend un 
 - Les lignes vides ou blanches sont ignorées.
 - Un film est identifié comme _Back to the Future_ si son nom normalisé commence par `"back to the future"`.
 
----
-
 ## 🖥️ Utilisation de l'application
 
 1. Saisissez les noms de films dans la zone de texte, **un film par ligne**.
@@ -154,8 +140,6 @@ La chèvre
 
 → Sous-total : 65 €, remise 20 % sur les 3 volets BTtF : −9 €, **Total : 56 €**.
 
----
-
 ## 🚧 Ce qui serait amélioré dans une vraie application de production
 
 - Créer un vrai moteur de facturation/promotion avec des régles composables.
@@ -170,8 +154,6 @@ La chèvre
 - Intégrer les tests dans une **CI** (GitHub Actions / GitLab CI) avec exécution automatique à chaque PR.
 - Ajouter des **tests de performance** pour s'assurer que `getBill` reste rapide sur de gros volumes (ex. 10k lignes).
 - Sauvegarder le panier dans le **stockage local** (`localStorage`) pour ne pas perdre la saisie au rechargement de la page.
-
----
 
 ## 👤 Auteur
 
