@@ -24,12 +24,10 @@ export function OrderArea() {
       h={"100vh"}
       style={{ display: "flex", flexDirection: "column" }}
     >
-      <Stack style={{ flex: 1, minHeight: 0 }}>
+      <Stack flex={1} mih={0}>
         <Title c={"white"}>💽 EkinoxTV</Title>
-        <Group gap={"10%"} align="start" style={{ flex: 1, minHeight: 0 }}>
-          <Box
-            style={{ flex: 1, height: "100%", minHeight: 0, display: "flex" }}
-          >
+        <Group gap={"10%"} align="start" flex={1} mih={0}>
+          <Box flex={1} display={"flex"} h={"100%"} mih={0}>
             <Textarea
               flex={1}
               placeholder={
@@ -52,7 +50,7 @@ export function OrderArea() {
             />
           </Box>
 
-          <Stack flex={1} style={{ height: "100%", minHeight: 0 }}>
+          <Stack flex={1} h={"100%"} mih={0}>
             <Title order={2}>Mon Panier</Title>
             <Box flex={1} mih={0} style={{ overflowY: "auto" }}>
               <Table.ScrollContainer minWidth={0}>
